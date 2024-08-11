@@ -1,6 +1,6 @@
 class Solution {
 public:
-       string minWindow(string s, string t) {
+string minWindow(string s, string t) {
     vector<int> count(128, 0);
     for (char c : t) {
         count[c]++;
@@ -29,7 +29,6 @@ public:
             l++;
         }
     }
-
     return minLength == INT_MAX ? "" : s.substr(start, minLength);
 }
 };
