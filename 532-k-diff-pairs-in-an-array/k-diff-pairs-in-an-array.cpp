@@ -1,5 +1,33 @@
 class Solution {
 public:
+    //slinding window
+    // int findPairs(vector<int>& nums, int k){
+    //     sort(nums.begin(),nums.end());
+    //     int count=0;
+    //     queue<int>q;
+
+    //     q.push(nums[0]);
+    //     int unique;
+    //     for(int i=1;i<nums.size();i++){
+    //         if(nums[i]==q.front()){
+    //             if(nums[i]-q.front()==k) count++;
+    //             else q.pop();
+    //         }
+    //         else if(nums[i]-q.front()==k){
+    //             count++;
+    //             q.pop();
+    //         }
+    //         else if(nums[i]-q.front()>k) q.pop();
+
+    //         q.push(nums[i]);
+    //     }
+    //     return count;
+    // }
+
+
+
+
+
     // Binary Search Method
     bool BS(vector<int>&arr,int s,int x){
       int e=arr.size()-1;
