@@ -43,8 +43,6 @@ public:
                 max2.second=i;
             }
         }
-        // cout<<min1.first<<" "<<min2.first<<" "<<max1.first<<" "<<max2.first<<endl;
-        // cout<<min1.second<<" "<<min2.second<<" "<<max1.second<<" "<<max2.second<<endl;
 
         if(max1.second==min1.second){
             if(max2.second==min2.second){
