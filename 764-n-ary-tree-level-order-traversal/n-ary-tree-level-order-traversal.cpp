@@ -28,11 +28,11 @@ public:
         //insert src node in queue
         q.push(root);
         q.push(NULL);
-        vector<int>tem;
-        tem.push_back(root->val);
-        ans.push_back(tem);
-
         vector<int>temp;
+        temp.push_back(root->val);
+        ans.push_back(temp);
+        temp.clear();
+
         
         while(!q.empty()){
             if(q.front()!=NULL){
