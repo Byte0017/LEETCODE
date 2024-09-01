@@ -1,9 +1,8 @@
 class Solution {
 public:
     vector<vector<int>> construct2DArray(vector<int>& arr, int m, int n) {
+        if(arr.size()>m*n || arr.size()<m*n) return {};
         vector<vector<int>>ans;
-        if(arr.size()>m*n || arr.size()<m*n) return ans;
-        
         for(int i=0;i<arr.size();i++){
             vector<int>temp;
             for(int j=i;j<i+n;j++){
