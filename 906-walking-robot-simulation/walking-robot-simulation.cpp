@@ -3,12 +3,8 @@ public:
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
         int maxi=0;
         int x=0,y=0;
-
-        bool N=1;
-        bool S=0;
-        bool E=0;
-        bool W=0;
-
+        bool N=1,S=0,E=0,W=0;
+    
         set<pair<int,int>>st;
         for(int i=0;i<obstacles.size();i++){
             pair p=make_pair(obstacles[i][0],obstacles[i][1]);
@@ -33,36 +29,28 @@ public:
                for(int j=1;j<=commands[i];j++){
                   pair p=make_pair(x,y+1);
                   if(st.find(p)!=st.end()) break;
-                  else{
-                    y++;
-                  }
+                  else y++;
                }
             }
             else if(S){
                 for(int j=1;j<=commands[i];j++){
                   pair p=make_pair(x,y-1);
                   if(st.find(p)!=st.end()) break;
-                  else{
-                    y--;
-                  }
+                  else y--;
                }
             }
             else if(E){
                 for(int j=1;j<=commands[i];j++){
                   pair p=make_pair(x+1,y);
                   if(st.find(p)!=st.end()) break;
-                  else{
-                    x++;
-                  }
+                  else x++;
                }
             }
             else if(W){
                 for(int j=1;j<=commands[i];j++){
                   pair p=make_pair(x-1,y);
                   if(st.find(p)!=st.end()) break;
-                  else{
-                    x--;
-                  }
+                  else x--;
                }
             }
             maxi=max(maxi,x*x+y*y);
