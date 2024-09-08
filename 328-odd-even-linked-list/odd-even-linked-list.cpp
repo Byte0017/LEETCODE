@@ -13,7 +13,6 @@ public:
     ListNode* oddEvenList(ListNode* head) {
         if(head==NULL) return NULL;
         if(head->next==NULL) return head;
-        // if(head->next->next==NULL) return head;
 
         ListNode*odd=head;
         ListNode*even=head->next;
