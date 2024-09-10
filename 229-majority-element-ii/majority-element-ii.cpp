@@ -17,7 +17,7 @@ public:
             if(i==x1) cnt1++;
             else if(i==x2) cnt2++;
         }
-        cout<<x1<<" "<<cnt1<<" "<<x2<<" "<<cnt2;
+        // cout<<x1<<" "<<cnt1<<" "<<x2<<" "<<cnt2;
         if(cnt1>nums.size()/3) ans.push_back(x1);
         if(cnt2>nums.size()/3) ans.push_back(x2);
         return ans;
