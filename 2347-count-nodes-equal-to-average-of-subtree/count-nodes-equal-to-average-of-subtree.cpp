@@ -1,23 +1,15 @@
 class Solution {
 public:
-    int size(TreeNode* root) {
-        if (root == NULL) return 0;
-        return 1 + size(root->left) + size(root->right);
-    }
+    pair<int, int> solve(TreeNode* root, int& cnt) {
+        if (root == NULL) return {0,0};
+       
+        pair<int,int> l = solve(root->left, cnt);
+        pair<int,int> r = solve(root->right, cnt);
 
-    int solve(TreeNode* root, int& cnt) {
-        if (root == NULL) return 0;
-        if (root->left == NULL && root->right == NULL) {
-            cnt++;
-            return root->val;
-        }
-        int l = solve(root->left, cnt);
-        int r = solve(root->right, cnt);
-
-        int n = size(root);
-        int avg = (l + r + root->val) / n;
-        if (avg == root->val) cnt++;
-        return l + r + root->val;
+        int sum = l.first + r.first + root->val;
+        int size = l.second + r.second + 1;
+        if(sum/size==root->val) cnt++;
+        return {sum,size};
     }
 
     int averageOfSubtree(TreeNode* root) {
