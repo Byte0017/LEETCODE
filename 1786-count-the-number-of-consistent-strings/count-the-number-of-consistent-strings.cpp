@@ -1,15 +1,15 @@
 class Solution {
 public:
     int countConsistentStrings(string allowed, vector<string>& words) {
-         unordered_map<int,int>mp;
+         unordered_set<int>st;
          for(int i=0;i<allowed.size();i++){
-            mp[allowed[i]]++;
+            st.insert(allowed[i]);
          }
          int cnt=0;
          for(auto str: words){
             int i=0;
             for(;i<str.size();i++){
-                if(mp.find(str[i])!=mp.end()){
+                if(st.find(str[i])!=st.end()){
                     continue;
                 }
                 else break;
