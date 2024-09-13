@@ -27,12 +27,9 @@ public:
         for(auto v:queries){
             int i=v[0];
             int j=v[1];
-            
             int val=arr[j]^(i==0?0:arr[i-1]);
-            
             ans.push_back(val);
         }
         return ans;
-
     }
 };
