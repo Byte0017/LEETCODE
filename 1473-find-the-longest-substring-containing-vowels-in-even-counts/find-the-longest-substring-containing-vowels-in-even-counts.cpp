@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findTheLongestSubstring(string s) {
-        unordered_map<int, int> mp;
+        unordered_map<int, int> mp;//2^5 (00000) space to store in map O(32)=O(1) space 
         int mask = 0;
         mp[mask] = -1;
         int maxL = 0;
