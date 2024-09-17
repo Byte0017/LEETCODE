@@ -3,7 +3,7 @@ public:
     void countWords( string &sentence, unordered_map<string, int> &wordCount) {
         stringstream ss(sentence);//stl use to split the string
         string word;
-        while (ss >> word) {
+        while (ss >> word) {  //imp operter it push words form ss,one by one into word string 
           // cout<<word<<endl;
            wordCount[word]++;
          }
