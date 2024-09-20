@@ -40,11 +40,11 @@ public:
                 continue;
             }
             else{
-               //pop() in t1 from back and in t2 from front
                while(t1!=t2){
                    temp+=t2[0];
+                   //pop() in t1 from back and in t2 from front
                    t1.pop_back();
-                   t2=t2.substr(1);
+                   t2.erase(0, 1);
                }
                //update i and j
                j--;
