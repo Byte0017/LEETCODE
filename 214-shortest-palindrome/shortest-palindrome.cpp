@@ -25,21 +25,20 @@ void LPS(const string& s, vector<int>& lps) {
 string shortestPalindrome(string s) {
     if (s.empty()) return s;
 
-    string rev_s = s;
-    reverse(rev_s.begin(), rev_s.end());
-    string s_new = s + "#" + rev_s;
+    string rev = s;
+    reverse(rev.begin(), rev.end());
+    string temp=rev;
+    rev = s + "#" + rev;
 
-    vector<int> lps(s_new.length(), 0);
-    LPS(s_new, lps);
+    vector<int> lps(rev.length(), 0);
+    LPS(rev, lps);
 
-    // Length of the longest palindrome prefix
-    int longest_palindrome_prefix_len = lps.back();
+    int len= lps.back();
 
     // Add the non-palindromic suffix of original string reversed at the front
-    string suffix = s.substr(longest_palindrome_prefix_len);
-    reverse(suffix.begin(), suffix.end());
+    string str=temp.substr(0,temp.size()-len);
 
-    return suffix + s;
+    return str + s;
 }
 
 };
