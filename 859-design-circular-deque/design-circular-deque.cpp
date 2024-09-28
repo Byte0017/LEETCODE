@@ -12,11 +12,7 @@ public:
     }
     
     bool insertFront(int value) {
-        if(front==0 && rear==size-1){
-            //queue is full
-            return false;
-        }
-        if(front-rear==1){
+        if((front==0 && rear==size-1) || (front-rear==1)){
             //queue is full
             return false;
         }
@@ -30,11 +26,7 @@ public:
     }
     
     bool insertLast(int value) {
-        if(front==0 && rear==size-1){
-            //queue is full
-            return false;
-        }
-        if(front-rear==1){
+        if((front==0 && rear==size-1) || (front-rear==1)){
             //queue is full
             return false;
         }
