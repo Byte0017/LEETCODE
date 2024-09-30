@@ -16,7 +16,6 @@ public:
             //st is full
             return;
         }
-        else if(top==-1) top=0;
         else top++;
         arr[top]=x;
     }
