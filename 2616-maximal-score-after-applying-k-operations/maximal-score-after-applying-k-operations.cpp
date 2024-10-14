@@ -5,12 +5,10 @@ public:
         priority_queue<int>pq;
         for(int i=0;i<nums.size();i++) pq.push(nums[i]);
         while(k--){
-            score+=pq.top();
             int x=pq.top();
-            x=ceil(x/3.0);
-         
             pq.pop();
-            pq.push(x);
+            score+=x;
+            pq.push(ceil(x/3.0));
         }
         return score;
     }
