@@ -6,13 +6,9 @@ public:
         for(int i=0;i<nums.size();i++) pq.push(nums[i]);
         while(k--){
             score+=pq.top();
-            int r=pq.top()%3;
-            int x=0;
-            if(r>0){
-                x=pq.top()/3 +1;
-            }
-            else x=pq.top()/3;
-
+            int x=pq.top();
+            x=ceil(x/3.0);
+         
             pq.pop();
             pq.push(x);
         }
