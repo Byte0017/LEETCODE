@@ -13,7 +13,6 @@ public:
             else if(s[i]=='0') i++;
             else if(s[j]=='1') j--; 
         }
-
         return cnt;
     }
 };
