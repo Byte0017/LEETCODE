@@ -42,5 +42,5 @@ By solving problems consistently, I aim to:
 ## 🚀 Getting Started
 
 Let’s collaborate to improve and learn together!
-📧 Email:ajaychbs16@.com
+📧 Email:  ajaychbs16@gmail.com
 
