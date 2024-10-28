@@ -1,7 +1,7 @@
 # 🚀 LeetCode Daily Challenge Repository
 
 ![LeetCode](https://img.shields.io/badge/LeetCode-Progress-orange)
-![Last Commit](https://img.shields.io/github/last-commit/byte0017/Leetcode)(https://github.com/Byte0017/LEETCODE/tree/main/POTD)
+![Last Commit](https://img.shields.io/github/last-commit/byte0017/Leetcode)
 
 
 Welcome to my **LeetCode Daily Challenge Repository**! 🌟 This repository documents my journey of tackling daily LeetCode problems, honing problem-solving skills, and advancing my knowledge of data structures and algorithms. Follow along to see a breakdown of my approach, solutions, and insights!
