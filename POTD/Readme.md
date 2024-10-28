@@ -79,3 +79,9 @@ Clone the repository to explore specific solutions:
 ```bash
 git clone https://github.com/yourusername/leetcode-daily-solutions.git
 cd leetcode-daily-solutions
+
+📬 Contact
+Feel free to reach out for discussions, questions, or collaborations!
+
+📧 Email: your-email@example.com
+💼 LinkedIn: LinkedIn Profile
