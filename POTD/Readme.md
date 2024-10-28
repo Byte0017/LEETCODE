@@ -31,9 +31,8 @@ By solving problems consistently, I aim to:
 
 | Day | POTD                        | Difficulty | Solution Link             |
 |-----|---------------------------------------------------|------------|----------------------------|
-| 1   | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy       | [Solution](./Two-Sum/)    |
-| 2   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium     | [Solution](./Add-Two-Numbers/) |
-| ... | ...                                               | ...        | ...                        |
+| 1   | [Longest Square Streak in an array](https://leetcode.com/problems/longest-square-streak-in-an-array/description/) |Medium     | [Solution](https://github.com/Byte0017/LEETCODE/blob/main/POTD/2501.%20Longest%20Square%20Streak%20in%20an%20Array)    |
+<!-- | 1   | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy       | [Solution](./Two-Sum/)    | -->
 
 
 *Check back daily for more updates as I solve new challenges! 🌱*
@@ -43,9 +42,5 @@ By solving problems consistently, I aim to:
 ## 🚀 Getting Started
 
 Let’s collaborate to improve and learn together!
-
-##📬 Contact
-Feel free to reach out if you’d like to discuss problem-solving techniques, coding, or anything else!
-
 📧 Email: your-ajaychbs16@.com
 
